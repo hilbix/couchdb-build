@@ -13,7 +13,7 @@ couchdb:
 install:
 
 debian:
-	apt-get install git build-essential
+	apt-get -y --no-install-recommends install git build-essential pkg-config erlang libicu-dev libmozjs185-dev libcurl4-openssl-dev
 
 .PHONY:	test
 test:
