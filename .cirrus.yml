@@ -2,7 +2,7 @@ container:
   image: debian:buster-slim
 
 build_task:
-  prep_script: apt-get update; apt-get install build-essential
+  prep_script: apt-get update; apt-get -y install build-essential
   debian_script: make debian
   compile_script: make
   test_script: make test
