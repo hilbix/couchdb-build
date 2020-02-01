@@ -1,5 +1,5 @@
 container:
-  image: debian:buster-slim
+  image: debian:stretch-slim
 
 build_task:
   prep_script: apt-get update; apt-get -y --no-install-recommends install make
