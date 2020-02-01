@@ -1,5 +1,5 @@
 container:
-  image: debian:stretch-slim
+  image: debian:stretch
 
 build_task:
   prep_script: apt-get update; apt-get -y --no-install-recommends install make
