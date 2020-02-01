@@ -13,7 +13,7 @@ Automate build of CouchDB for inclusion and track as a `git submodule`.
 
 ## WTF why?
 
-Currently CouchDB is not in Debian Buster. It's probably easy to compile it yourself.  However this does not document how it must be done.
+Currently CouchDB is not in Debian. It's probably easy to compile it yourself.  However this does not document how it must be done.
 
 Also I use Cirrus-CI to check all my builds, so I want to use that, because it only needs read access to my GitHub repo.
 
