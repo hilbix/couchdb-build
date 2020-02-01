@@ -1,3 +1,5 @@
+[![couchdb-build Build Status](https://api.cirrus-ci.com/github/hilbix/couchdb-build.svg?branch=master)](https://cirrus-ci.com/github/hilbix/couchdb-build/master)
+
 # CouchDB build
 
 Automate build of CouchDB for inclusion and track as a `git submodule`.
