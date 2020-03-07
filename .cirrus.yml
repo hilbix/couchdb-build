@@ -2,9 +2,9 @@ container:
   image: debian:stretch
 
 build_task:
-  pregit_script: alt-get update; apt-get -y --no-install-recommends install git
+  pregit_script: apt-get update && apt-get -y --no-install-recommends install git
   git_script: git submodule update --init
-  prep_script: apt-get update; apt-get -y --no-install-recommends install make
+  prep_script: apt-get update && apt-get -y --no-install-recommends install make
   debian_script: make debian
   compile_script: make
   test_script: make test
