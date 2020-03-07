@@ -16,13 +16,15 @@ couchdb/bin/rebar:	couchdb/.git
 	cd couchdb && ./configure
 
 couchdb/.git:
-	git submodule update --init
+	git submodule update --init --recursive
 
 .PHONY:	install
 install:
 
 debian:
-	apt-get -y --no-install-recommends install git build-essential pkg-config erlang libicu-dev libmozjs185-dev libcurl4-openssl-dev
+	apt-get -y --no-install-recommends install git build-essential pkg-config
+	apt-get -y --no-install-recommends install help2man erlang erlang-ibrowse
+	apt-get -y --no-install-recommends install libicu-dev libmozjs185-dev libcurl4-openssl-dev
 
 .PHONY:	test
 test:
