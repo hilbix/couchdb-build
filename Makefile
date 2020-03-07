@@ -23,7 +23,7 @@ install:
 
 debian:
 	apt-get -y --no-install-recommends install git build-essential pkg-config
-	apt-get -y --no-install-recommends install help2man erlang erlang-ibrowse
+	apt-get -y --no-install-recommends install help2man erlang
 	apt-get -y --no-install-recommends install libicu-dev libmozjs185-dev libcurl4-openssl-dev
 
 .PHONY:	test
