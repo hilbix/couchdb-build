@@ -2,9 +2,7 @@ container:
   image: debian:stretch
 
 build_task:
-  pregit_script: apt-get update && apt-get -y --no-install-recommends install git ca-certificates
-  git_script: git submodule update --init
-  prep_script: apt-get update && apt-get -y --no-install-recommends install make
+  prep_script: apt-get update && apt-get -y --no-install-recommends install make ca-certificates
   debian_script: make debian
   compile_script: make
   test_script: make test
