@@ -9,7 +9,7 @@ all:	couchdb
 
 .PHONY:	couchdb
 couchdb:	couchdb/bin/rebar
-	$(MAKE) -C '$@'
+	$(MAKE) -C '$@' release
 
 # Huh?
 couchdb/bin/rebar:	couchdb/.git
